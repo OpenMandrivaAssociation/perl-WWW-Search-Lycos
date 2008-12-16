@@ -2,8 +2,8 @@
 
 Summary:	WWW::Search::Lycos - class for searching www.lycos.com
 Name:		perl-%{real_name}
-Version:	2.221
-Release: %mkrel 6
+Version:	2.223
+Release: %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
