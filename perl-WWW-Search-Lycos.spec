@@ -1,16 +1,16 @@
 %define real_name WWW-Search-Lycos
+%define upstream_version 2.224
 
 Summary:	WWW::Search::Lycos - class for searching www.lycos.com
 Name:		perl-%{real_name}
-Version:	2.223
-Release: %mkrel 2
+Version:	%perl_convert_version 2.224
+Release: 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/%{real_name}-%{version}.tar.bz2
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/WWW/WWW-Search-Lycos-2.224.tar.gz
 BuildRequires:	perl-devel
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This class is a Lycos specialization of WWW::Search.  It handles
@@ -20,7 +20,7 @@ This class exports no public interface; all interaction should
 be done through WWW::Search objects.
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{real_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -30,14 +30,9 @@ be done through WWW::Search objects.
 #make test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean 
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc ChangeLog README
 %{perl_vendorlib}/WWW/Search/Lycos.pm
 %{_mandir}/*/*
@@ -70,11 +65,12 @@ rm -rf %{buildroot}
 - rebuild
 
 
-* Fri Apr 28 2006 Nicolas Lécureuil <neoclust@mandriva.org> 2.221-2mdk
+* Fri Apr 28 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 2.221-2mdk
 - Fix SPEC according to Perl Policy
 	- Source URL
 - use mkrel
 
 * Thu Jul 14 2005 Oden Eriksson <oeriksson@mandriva.com> 2.221-1mdk
 - initial Mandriva package
+
 
