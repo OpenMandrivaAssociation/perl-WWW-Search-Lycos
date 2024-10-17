@@ -7,7 +7,7 @@ Version:	%perl_convert_version 2.224
 Release: 3
 License:	GPL or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
+URL:		https://search.cpan.org/dist/%{real_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/WWW/WWW-Search-Lycos-2.224.tar.gz
 BuildRequires:	perl-devel
 BuildArch:	noarch
