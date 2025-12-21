@@ -9,6 +9,7 @@ License:	GPL or Artistic
 Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{real_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/WWW/WWW-Search-Lycos-2.224.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildArch:	noarch
 
