@@ -1,14 +1,14 @@
 %define real_name WWW-Search-Lycos
-%define upstream_version 2.224
+%define upstream_version 2.225
 
 Summary:	WWW::Search::Lycos - class for searching www.lycos.com
 Name:		perl-%{real_name}
-Version:	%perl_convert_version 2.224
-Release: 3
+Version:	%{upstream_version}
+Release: 1
 License:	GPL or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{real_name}
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/WWW/WWW-Search-Lycos-2.224.tar.gz
+URL:		https://metacpan.org/dist/WWW-Search-Lycos
+Source0:	https://cpan.metacpan.org/authors/id/M/MT/MTHURN/WWW-Search-Lycos-2.225.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildArch:	noarch
