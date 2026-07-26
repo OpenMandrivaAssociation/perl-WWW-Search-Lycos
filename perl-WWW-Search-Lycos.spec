@@ -1,10 +1,8 @@
 %define real_name WWW-Search-Lycos
-%define upstream_version 2.225
-
 Summary:	WWW::Search::Lycos - class for searching www.lycos.com
 Name:		perl-%{real_name}
-Version:	%{upstream_version}
-Release: 1
+Version:	2.225
+Release: 2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/WWW-Search-Lycos
@@ -21,7 +19,7 @@ This class exports no public interface; all interaction should
 be done through WWW::Search objects.
 
 %prep
-%setup -q -n %{real_name}-%{upstream_version} 
+%setup -q -n %{real_name}-%{version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
